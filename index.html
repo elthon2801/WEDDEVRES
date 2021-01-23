@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEBDEVASS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+html {
+  box-sizing: border-box;
+}
+body{
+    background-color:#002147;
+}
+
+/* Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+  .column {
+    background-color: blueviolet;
+
+  }
+  #hw{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 260%;
+    padding-top: 10%;
+    margin: 0%;
+    color:orange;
+    text-align: center
+  }
+  #p{
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:0;
+    color:white;
+    font-size: 110%;
+    text-align:center;
+  }
+  #bri{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  #elt{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  #ila{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  #jpp{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  #car{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  *, *:before, *:after {box-sizing:inherit;}
+  .column { 
+    width:80%; margin: 10%; padding: 0 8px;
+  }
+  .card {
+    background-color: floralwhite;
+    border-top-right-radius: 25%;
+  }
+  .container {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;padding: 0 16px;text-align: center; font-size:75%; 
+  }
+  .container::after, .row::after{
+    content: ""; clear:both; display:table;
+  }
+  .button {
+    border: none; outline: 0; display: inline-block; padding: 8px; 
+    color: white; background-color:orange;text-align: center; cursor: pointer;width: 100%;
+  }
+  .button:hover {
+    background-color:#002147;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .column {
+    background: red;
+  }
+  #hw{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 600%;
+    margin:0 ;
+    text-align:center;
+    color:orange;
+  }
+  #p{
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:0;
+    text-align: center;
+    color:white;
+    font-size: 275%;
+  }
+  #bri{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  #elt{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  #ila{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99%;}
+  #jpp{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  #car{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  .column {
+     width:90%; margin: 5%; padding: 0 8px;
+  }
+  .card {
+    background-color: floralwhite; border-top-right-radius: 25%;
+  }
+  .container {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;padding: 0 16px;text-align: center;
+  }
+  .container::after, .row::after{
+    content: ""; clear: both; display: table;
+  }
+  .button {
+    border: none; outline: 0; display: inline-block; padding: 8px; 
+    color: white; background-color:orange;text-align: center; cursor: pointer;width: 100%;}
+  .button:hover {
+    background-color:#002147;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .column{
+    background:green;
+    justify-content: center;
+  }
+  #hw{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 700%;
+    margin:0 ;
+    text-align: center;
+    color:orange;
+  }
+  #p{
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:0;
+    text-align: center;
+    color:white;
+    font-size: 350%;
+  }   
+  #bri{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 98.5%;}
+  #elt{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 98%;}
+  #ila{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99%;}
+  #jpp{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  #car{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+   *,*:before, *:after {box-sizing: inherit;}
+  .column {float:left; width: 40%; margin: 10%, 0%; padding: 0 8px;}
+  .card {background-color: floralwhite; border-top-right-radius: 25%;}
+  .container {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;padding: 0 16px;text-align: center;}
+  .container::after, .row::after{content: ""; clear: both; display: flexbox;}
+  .button {border: none; outline: 0; display: inline-block; padding: 8px; 
+    color: white; background-color:orange;text-align: center; cursor: pointer;width: 100%;}
+  .button:hover {background-color:#002147;}  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .column {
+    background:blue;
+  }
+  #hw{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 950%;
+    margin:0 ;
+    text-align: center;
+    color:orange;
+  }
+  #p{ 
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:0;
+    text-align: center;
+    color:white;
+    font-size: 450%;
+  }
+  #bri{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  #elt{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99%;}
+  #ila{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  #jpp{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  #car{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 100%;}
+  *, *:before, *:after {box-sizing: inherit;}
+  .column {float:left; width: 30%; margin: 1.5%; padding: 0 8px;}
+  .card {background-color: floralwhite; border-top-right-radius: 25%;}
+  .container {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;padding: 0 16px;text-align: center;}
+  .container::after, .row::after{content: ""; clear: both; display: table;}
+  .button {border: none; outline: 0; display: inline-block; padding: 8px; 
+    color: white; background-color:orange;text-align: center; cursor: pointer;width: 100%;}
+  .button:hover {background-color:#002147;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .column {
+    background: pink;
+  }
+  #hw{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 900%;
+    margin:0 ;
+    text-align: center;
+    color:orange;
+  }
+  #p{
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:0;
+    text-align: center;
+    color:white;
+    font-size: 500%;
+  }
+  #bri{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  #elt{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  #ila{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  #jpp{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  #car{border-bottom-left-radius: 25%; border-top-right-radius: 25%; width: 99.3%;}
+  *, *:before, *:after {box-sizing: inherit;}
+  .column {float:left; width: 17%; margin-bottom: 1%; padding: 0 8px;}
+  .card {background-color: floralwhite; border-top-right-radius: 25%;}
+  .container {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;padding: 0 16px;text-align: center; font-size: 72%;}
+  .container::after, .row::after{content: ""; clear: both; display: table;}
+  .button {border: none; outline: 0; display: inline-block; padding: 8px; 
+    color: white; background-color:orange;text-align: center; cursor: pointer;width: 100%;}
+  .button:hover {background-color:#002147;}
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<h2 ID="hw">HELLO WORLD!</h2>
+<p id="p">MEET OUR WEB DEVELOPMENT TEAM</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://drive.google.com/uc?export=view&id=16GCCHBy_QyHb8ShR3nGDpYNPEu_xHVUJ" alt="Brian" id="bri">
+      <div class="container">
+        <h2>Brian Oniel Galang</h2>
+        <p>Lourdes Sur, Angeles City</p>
+        <p>bogalang@cca.edu.ph</p>
+        <p><a href="https://www.facebook.com/bryanoniel.galang" target="_blank">
+            <button class="button">View Facebook Profile</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://drive.google.com/uc?export=view&id=1uJ_CXwTl7XzVMjNqv2OKUvJmoihRTiCh" alt="Elthon" id="elt">
+        <div class="container">
+          <h2>Elthon Jon Cayetano</h2>
+          <p>Sapangbato, Angeles City</p>
+          <p>ejcayetano@cca.edu.ph</p>
+          <p><a href="eltres.html" target="_blank"><button class="button">More Details</button></a></p>
+          <p><a href="https://www.facebook.com/elthon.cayetano" target="_blank"><button class="button">View Facebook Profile</button></a></p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="https://drive.google.com/uc?export=view&id=18ObqLXPvimYAkCi-ObGTMv5Jqw12BmdJ" alt="Ilah"  id="ila">
+          <div class="container">
+            <h2>Ilah Zamora</h2>
+            <p>Lourdes Sur, Angeles City</p>
+            <p>izamora@cca.edu.ph</p>
+            <p><a href="https://www.facebook.com/ilahashley.zamora" target="_blank"><button class="button">View Facebook Profile</button></a></p>
+        </div>
+        </div>
+      </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://drive.google.com/uc?export=view&id=1NKNDK3GtdJMPoU1BW5oiK2AfWTHYqC5R" alt="Patrick" id="jpp">
+      <div class="container">
+        <h2>John Patrick Pasohil</h2>
+        <p>Somewhere in Angeles City</p>
+        <p>jppasohil@cca.edu.ph</p>
+        <p><a href="https://www.facebook.com/GyraGamer" target="_blank"><button class="button">View Facebook Profile</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://drive.google.com/uc?export=view&id=1M3mSm8K5JaU40KLCJCbEabO1lTH37D8s" alt="carlos" id="car">
+      <div class="container">
+        <h2>Carlos Gonzales</h2>
+        <p>Somewhere in Angeles City</p>
+        <p>csjgonzales@cca.edu.ph</p>
+        <p><a href="https://www.facebook.com/Ultramegaman1221" target="_blank"><button class="button">View Facebook Profile</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
